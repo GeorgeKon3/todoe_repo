@@ -1,0 +1,99 @@
+{
+  "project_info": {
+    "project_number": "566738057465",
+    "firebase_url": "https://todoe-8f40f.firebaseio.com",
+    "project_id": "todoe-8f40f",
+    "storage_bucket": "todoe-8f40f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:566738057465:android:8fdaac7073c37f80fe8a28",
+        "android_client_info": {
+          "package_name": "com.elcunemedia.todoe"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "566738057465-rm9e9errj5hlk2tod01bkk0ollqinhe1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.elcunemedia.todoe",
+            "certificate_hash": "e670d4353e0d062a447792665747e85fb29d552b"
+          }
+        },
+        {
+          "client_id": "566738057465-3tt1lsqf5ne3ctt9a6rbauhsb83bqvn7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC1V5duKXr-um_KIuPy5liw-SiAosv0_cA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "566738057465-3tt1lsqf5ne3ctt9a6rbauhsb83bqvn7.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "566738057465-c97pp43nf52nd1nbknoiko8i82pnigs5.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.withempathyagency.todoe"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:566738057465:android:ccb2b5154c9bae9ffe8a28",
+        "android_client_info": {
+          "package_name": "com.withempathyagency.todoe"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "566738057465-af535gs1ph62r3oocdmqe1v40slhcn7e.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.withempathyagency.todoe",
+            "certificate_hash": "e670d4353e0d062a447792665747e85fb29d552b"
+          }
+        },
+        {
+          "client_id": "566738057465-3tt1lsqf5ne3ctt9a6rbauhsb83bqvn7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC1V5duKXr-um_KIuPy5liw-SiAosv0_cA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "566738057465-3tt1lsqf5ne3ctt9a6rbauhsb83bqvn7.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "566738057465-c97pp43nf52nd1nbknoiko8i82pnigs5.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.withempathyagency.todoe"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
