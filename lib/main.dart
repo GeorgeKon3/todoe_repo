@@ -12,6 +12,7 @@ import 'c_notes/providers/sqflite_ labels_provider.dart';
 import 'c_notes/providers/sqflite_notes_provider.dart';
 import 'constants.dart';
 import 'package:flutter_statusbarcolor/flutter_statusbarcolor.dart';
+import 'z_main_menus/discover_screen.dart';
 
 //void main() => runApp(MyApp());
 
@@ -50,7 +51,8 @@ class MainScreen extends StatelessWidget {
     return StreamBuilder<User>(
       stream: FirebaseAuth.instance.authStateChanges(),
       builder: (context, AsyncSnapshot<User> snapshot) {
-        if (snapshot.connectionState == ConnectionState.waiting) return SplashPage();
+        if (snapshot.connectionState == ConnectionState.waiting)
+          return SplashPage();
         if (!snapshot.hasData || snapshot.data == null) return LoginPage();
         return MyHomePage();
       },
@@ -72,7 +74,7 @@ class _MyHomePageState extends State<MyHomePage> {
     BoardScreen(),
     ScheduleScreen(),
     NotesScreen(),
-    //DiscoverScreen(),
+    DiscoverScreen(),
   ];
 
   @override
@@ -108,12 +110,12 @@ class _MyHomePageState extends State<MyHomePage> {
                     size: kTabBarIconSize,
                   ),
                 ),
-                // Tab(
-                //   icon: Icon(
-                //     Icons.class_,
-                //     size: kTabBarIconSize,
-                //   ),
-                // ),
+                Tab(
+                  icon: Icon(
+                    Icons.class_,
+                    size: kTabBarIconSize,
+                  ),
+                ),
               ],
               unselectedLabelColor: Colors.grey[800],
               labelColor: kMainCustomizingColor,
@@ -148,7 +150,8 @@ class _MyHomePageState extends State<MyHomePage> {
       });
       SQFLiteNotesProvider.insertNote({
         'title': 'Start exploring all its capabilities now!',
-        'text': 'Step 1: Tap on the note above and edit it.\nStep 2: Tap on the hamburger menu on the top left of the app',
+        'text':
+            'Step 1: Tap on the note above and edit it.\nStep 2: Tap on the hamburger menu on the top left of the app',
         'color': 0,
         'labelid': maxNoteLabelID,
         'label': '0. Welcome Tutorial',
