@@ -10,7 +10,10 @@ class BoardCard extends StatelessWidget {
   final String boardName;
   final String boardEmoji;
 
-  BoardCard({@required this.screenWidth, @required this.boardName, @required this.boardEmoji});
+  BoardCard(
+      {@required this.screenWidth,
+      @required this.boardName,
+      @required this.boardEmoji});
 
   final DatabaseServiceBoards databaseServiceBoards = DatabaseServiceBoards();
   @override
@@ -21,7 +24,8 @@ class BoardCard extends StatelessWidget {
         Navigator.push(
           context,
           MaterialPageRoute(
-            builder: (context) => EditBoardScreen(thisSpecificBoardName: boardName ?? 'name error'),
+            builder: (context) => EditBoardScreen(
+                thisSpecificBoardName: boardName ?? 'name error'),
           ),
         );
       },
@@ -118,7 +122,7 @@ IconData getEmoji(boardEmoji) {
   } else if (boardEmoji == 'content_copy') {
     return Icons.content_copy;
   } else if (boardEmoji == 'add_location_alt_outlined') {
-    return Icons.add_location_alt_outlined;
+    //return Icons.add_location_alt_outlined;
   }
 
   return Icons.lightbulb_outline;

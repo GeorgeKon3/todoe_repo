@@ -37,7 +37,13 @@ class BoardWrapOfBoards extends StatelessWidget {
 }
 
 getRandomEmoji() {
-  List<String> emojiList = ['cloud_queue', 'lock_outline', 'add_circle_outline', 'content_copy', 'add_location_alt_outlined'];
+  List<String> emojiList = [
+    'cloud_queue',
+    'lock_outline',
+    'add_circle_outline',
+    'content_copy',
+    'add_location_alt_outlined'
+  ];
   int temp = Random().nextInt(emojiList.length - 1);
   return emojiList[temp];
 }
@@ -52,7 +58,7 @@ IconData getEmoji(boardEmoji) {
   } else if (boardEmoji == 'content_copy') {
     return Icons.content_copy;
   } else if (boardEmoji == 'add_location_alt_outlined') {
-    return Icons.add_location_alt_outlined;
+    //return Icons.add_location_alt_outlined;
   } else if (boardEmoji == 'cloud_queue') {
     return Icons.cloud_queue;
   }
